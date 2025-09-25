@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-//import './style/Navbar.css'; // ✨ Import from style folder
+import '/workspaces/myreact-660710706/bookstore-app/src/components/styles/Navbar.css'; // ✨ Import from style folder
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
             Books
           </NavLink>
           <NavLink 
-            to="/category/fiction" 
+            to="/category" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             onClick={() => setIsMenuOpen(false)}
           >

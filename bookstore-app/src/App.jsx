@@ -7,11 +7,11 @@ import Navbar from './components/Navbar';
 
 // Import Pages
 import HomePage from './pages/HomePage';
-// import BookListPage from './pages/BookListPage';
-// import BookDetailPage from './pages/BookDetailPage';
+import BookListPage from './pages/BookListPage';
+import CategoriesPage from './pages/CategoriesPage';
 // import CategoryPage from './pages/CategoryPage';
-// import AboutPage from './pages/AboutPage';
-// import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import NotFound from './components/NotFound';
 
 // Import CSS
@@ -30,19 +30,18 @@ function App() {
           <Route path="/" element={<HomePage />} />
           
           หน้ารายการหนังสือทั้งหมด
-          {/* <Route path="/books" element={<BookListPage />} /> */}
+          <Route path="/books" element={<BookListPage />} />
           
           {/* หน้ารายละเอียดหนังสือ - ใช้ dynamic parameter */}
-          {/* <Route path="/books/:bookId" element={<BookDetailPage />} /> */}
+          <Route path="/category" element={<CategoriesPage />} />
           
           {/* หน้าหมวดหมู่ - ใช้ dynamic parameter */}
           {/* <Route path="/category/:categoryId" element={<CategoryPage />} /> */}
           
           {/* หน้าเกี่ยวกับเรา */}
-          {/* <Route path="/about" element={<AboutPage />} />
-           */}
+          <Route path="/about" element={<AboutPage />} />
           {/* หน้าติดต่อ */}
-          {/* <Route path="/contact" element={<ContactPage />} /> */}
+          <Route path="/contact" element={<ContactPage />} />
           
           {/* หน้า 404 - สำหรับ URL ที่ไม่มีอยู่ */}
           <Route path="*" element={<NotFound />} />
